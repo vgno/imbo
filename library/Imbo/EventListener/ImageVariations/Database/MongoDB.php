@@ -90,6 +90,7 @@ class MongoDB implements DatabaseInterface {
             $this->getCollection()->insert([
                 'added' => time(),
                 'publicKey' => $publicKey,
+                'user' => $publicKey,
                 'imageIdentifier'  => $imageIdentifier,
                 'width' => $width,
                 'height' => $height,

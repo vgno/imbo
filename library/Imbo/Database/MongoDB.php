@@ -492,6 +492,7 @@ class MongoDB implements DatabaseInterface {
             $data = [
                 'shortUrlId' => $shortUrlId,
                 'publicKey' => $publicKey,
+                'user' => $publicKey,
                 'imageIdentifier' => $imageIdentifier,
                 'extension' => $extension,
                 'query' => serialize($query),
