@@ -125,6 +125,7 @@ class MongoDB implements DatabaseInterface {
         $data = [
             'size'             => $image->getFilesize(),
             'publicKey'        => $publicKey,
+            'user'             => $publicKey,
             'imageIdentifier'  => $imageIdentifier,
             'extension'        => $image->getExtension(),
             'mime'             => $image->getMimeType(),
