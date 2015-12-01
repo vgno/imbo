@@ -124,6 +124,7 @@ class MongoDB implements DatabaseInterface {
 
         $data = [
             'size'             => $image->getFilesize(),
+            'publicKey'        => $user,
             'user'             => $user,
             'imageIdentifier'  => $imageIdentifier,
             'extension'        => $image->getExtension(),
@@ -509,6 +510,7 @@ class MongoDB implements DatabaseInterface {
         try {
             $data = [
                 'shortUrlId' => $shortUrlId,
+                'publicKey' => $user,
                 'user' => $user,
                 'imageIdentifier' => $imageIdentifier,
                 'extension' => $extension,
